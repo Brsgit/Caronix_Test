@@ -32,7 +32,7 @@ public class EnemyHealthBar : MonoBehaviour
         var damage = Random.Range(5, 11);
         _healthValue -= damage;
 
-        if(_healthValue < 0)
+        if(_healthValue <= 0)
         {
             _healthValue = 0;
             OnNoMorehealth?.Invoke();
